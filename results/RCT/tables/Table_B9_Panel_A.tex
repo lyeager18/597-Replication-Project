@@ -1,0 +1,14 @@
+                         &\multicolumn{1}{c}{(1)} &\multicolumn{1}{c}{(2)} &\multicolumn{1}{c}{(3)} &\multicolumn{1}{c}{(4)} &\multicolumn{1}{c}{(5)} &\multicolumn{1}{c}{(6)} \\
+                         &\multicolumn{1}{c}{\shortstack{Started\\driver's\\training}}&\multicolumn{1}{c}{\shortstack{Received\\license}}&\multicolumn{1}{c}{\shortstack{Any driving in\\past month}}&\multicolumn{1}{c}{\shortstack{Number of\\times left\\house in\\last 7 days}}&\multicolumn{1}{c}{\shortstack{Share of trips\\made without\\male chaperone}}&\multicolumn{1}{c}{\shortstack{Always travels\\with male\\chaperone}}\\
+\hline
+$\beta\textsubscript{1}$: Driving training&          0.620\sym{***}&          0.397\sym{***}&          0.186\sym{***}&          0.829         &          0.087         &         -0.087         \\
+                         &        (0.056)         &        (0.058)         &        (0.072)         &        (0.700)         &        (0.067)         &        (0.073)         \\
+$\beta\textsubscript{2}$: Rideshare subsidy&          0.089         &          0.048         &          0.039         &          0.467         &          0.004         &         -0.010         \\
+                         &        (0.063)         &        (0.055)         &        (0.073)         &        (0.689)         &        (0.072)         &        (0.078)         \\
+$\beta\textsubscript{3}$: Driving training x Rideshare subsidy&          0.005         &          0.064         &          0.036         &         -0.144         &          0.001         &         -0.008         \\
+                         &        (0.079)         &        (0.077)         &        (0.094)         &        (1.023)         &        (0.089)         &        (0.096)         \\
+\hline
+Observations             &            467         &            467         &            489         &            470         &            461         &            461         \\
+Control Group Mean       &          0.192         &          0.102         &          0.335         &          5.200         &          0.433         &          0.491         \\
+P-val: $\beta\textsubscript{1}$ + $\beta\textsubscript{3}$ = 0&          0.000         &          0.000         &          0.000         &          0.326         &          0.142         &          0.130         \\
+P-val: $\beta\textsubscript{2}$ + $\beta\textsubscript{3}$ = 0&          0.044         &          0.041         &          0.209         &          0.645         &          0.931         &          0.746         \\
