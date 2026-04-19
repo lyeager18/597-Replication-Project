@@ -15,7 +15,7 @@ cap log close
 
 
 * Install necessary packages
-local ssc_packages swindex reghdfe ihstrans winsor2 outreg2 grc1leg scto ietoolkit ///
+local ssc_packages swindex reghdfe ihstrans winsor2 outreg2 scto ietoolkit ///
 				   blindschemes texdoc
 
 foreach pkg in `ssc_packages' {
@@ -23,16 +23,21 @@ foreach pkg in `ssc_packages' {
     if _rc {
         di "Installing `pkg' from SSC..."
         ssc install `pkg', replace
-		if "`pkg'"=="grc1leg" {
-			net install grc1leg, from( http://www.stata.com/users/vwiggins/)
 		}
-    }
+   
     else {
         di "`pkg' is already installed."
     }
 }
 
-
+* Handle grc1leg separately (NOT on SSC)
+cap which grc1leg
+if _rc {di "Installing grc1leg from Wiggins' site..." ///
+    net install grc1leg, from("http://www.stata.com/users/vwiggins/")
+}
+else {
+    di "grc1leg is already installed."
+}
 
 * Run cleaning files
 

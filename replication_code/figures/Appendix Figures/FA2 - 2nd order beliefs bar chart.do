@@ -129,8 +129,7 @@ graph bar normsqdummy* if inlist(qversion,2,3,4), over(normgroup) horizontal sta
 	bar(5,color(blue) lcolor(white) lwidth(thin)) 
 	graph save "Graph" "$output_descr/figures/gph_files/childrensuffer_combined.gph", replace
 	
-
-	grc1leg "$output_descr/figures/gph_files/menexecs_combined.gph" ///
+    grc1leg "$output_descr/figures/gph_files/menexecs_combined.gph" ///
 	"$output_descr/figures/gph_files/womanpriority_combined.gph" ///
 	"$output_descr/figures/gph_files/childrensuffer_combined.gph", col(1) 
 	graph save "Graph" ///

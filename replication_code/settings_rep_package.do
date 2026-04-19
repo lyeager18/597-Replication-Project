@@ -15,9 +15,7 @@ Purpose: 		Settings for Saudi commute project
 		called "mainfolder". The Subfolder globals are set to run based on
 		"mainfolder" and do not need to be edited.	*/
 
-		global 		mainfolder "[INSERT FILE PATH TO REP PACKAGE]/saudi_women_driving"
-		
-
+		global 		mainfolder "/Users/lyeager18/GitHub/597 Replication Project"
 	
 ********************************************************************************
 * Subfolder globals 
